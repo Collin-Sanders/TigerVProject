@@ -1,8 +1,7 @@
-# TigerV2
-## ***Touchscreen interface for controlling automotive accessories***
+# TigerV2 - A Touchscreen interface for controlling automotive accessories
 
 
-#### Shopping List:
+## Shopping List:
 $27 - Pi Zero       - https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1
 
 $5  - Port Expander - https://www.amazon.com/gp/product/B00I6OEWJM/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1
