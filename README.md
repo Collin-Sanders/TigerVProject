@@ -1,8 +1,8 @@
 # TigerV2
-***Touchscreen interface for controlling automotive accessories***
+##***Touchscreen interface for controlling automotive accessories***
 
 
-Shopping List:
+#### Shopping List:
 $27 - Pi Zero       - https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1
 
 $5  - Port Expander - https://www.amazon.com/gp/product/B00I6OEWJM/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1
@@ -17,8 +17,8 @@ $16 - Container     - https://www.amazon.com/dp/B005T5A0W4/?coliid=ITRCCVAQB8PF&
 
 $9  - Connectors    - https://www.amazon.com/dp/B01LCV8DXQ/?coliid=I239Y8T2FCJZ2O&colid=3PB41YGHIDZTW&ref_=lv_ov_lig_dp_it&th=1
 
-  Link to Amazon list:
+  #### Link to Amazon list:
   https://www.amazon.com/hz/wishlist/ls/3PB41YGHIDZTW?ref_=wl_share
   
-Estimated Total Cost:
+#### Estimated Total Cost:
 $112
