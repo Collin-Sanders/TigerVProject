@@ -67,3 +67,14 @@ Open the terminal and execute the following commands
   sudo ./MHS35-show
   ```
 Then reboot
+
+
+## Install the TigerV2 software
+
+Open the terminal and execute the following commands
+
+  ```
+  git clone https://github.com/Collin-Sanders/TigerV2Project.git
+  ```
+  
+## Set the program to run on start
