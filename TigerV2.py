@@ -3,14 +3,11 @@ Name: Tiger V2
 Creator: Collin Sanders
 Date: 10-3-2019
 Description: 6 button gui that controls auxillary accessories on 2009 Tacoma
+Hardware: Raspberry Pi Zero, TFT 3.5" touchscreen, MCP23017
 """
 import tkinter as tk
 import smbus
 import time
-
-
-
-
 
 
 #bus = smbus.SMBus(0) # Rev 1 Pi
@@ -32,31 +29,20 @@ bus.write_byte_data(DEVICE,IODIRB,0x00)
 # Set all 7 output bits to 0
 bus.write_byte_data(DEVICE,OLATB,0)
 
-
+# Read state of each switch
 Taster = bus.read_byte_data(DEVICE,GPIOA)
 
 
 
 button_text = [["Fog Lights", "Light Bar", "Winch"],
                ["Air Comp","Bed Lights", "Rock Lights"]]
-
 override_list  = [0,0,0,0,0,0]
 output_list    = [0,0,0,0,0,0]
 switch_state   = [0,0,0,0,0,0]
 software_state = [0,0,0,0,0,0]
 temp_switch_state = [int(d) for d in list('{0:06b}'.format(Taster))]
 switch_state = temp_switch_state[::-1]
-
-
-
-
-
-
-
-
-
 button_counter = 1
-
 button_color = "black"
 default_off_text_color = "red"
 default_on_text_color = "green"
@@ -68,29 +54,23 @@ button_relief = tk.RIDGE
  
 # Function that makes all LEDs light up.
 def send():
-    
         temp = output_list[::-1]    
-        
         to_send = (int(''.join(map(str,temp)),2))
-            
-        
         bus.write_byte_data(DEVICE,OLATB,to_send)
  
 
 
 def btn_color_set():
-    
     for i in range (6):
         button_number = i+1
-        
+    
         if(button_number > 3):
                  row_num = 1
                  column_num = button_number - 3
         else:
                  row_num = 0
                  column_num = button_number
-                 
-                 
+                
         if(output_list[i] == 1):
             frame.grid_slaves(row = row_num, column = column_num-1)[0].config(fg = "green")
         else:
@@ -154,7 +134,7 @@ def update():
 
 
 def change_output(software_state, switch_state, output_list):
-    
+ 
     for i in range(6):
         if(software_state[i] and switch_state[i]):
             override_list[i] = 1
@@ -177,16 +157,10 @@ def change_output(software_state, switch_state, output_list):
             output_list[i] = 0
             software_state[i] = 0
             
-        
-            
         if((software_state[i] == 0) and (switch_state[i] == 0)):
             output_list[i] = 0
         
-        
-          
-            
-            
-
+#Continually update screen to show latest state      
 while 1:
     update()
     
