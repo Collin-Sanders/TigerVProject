@@ -55,7 +55,7 @@ Plug in the touchscreen with the pin 2 lining up with pin 2 on the pi
 
 Start the pi and go through all of the setup
 
-Open the terminal and execut the following commands
+Open the terminal and execute the following commands
 
   ```
   sudo apt-get update
