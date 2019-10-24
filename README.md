@@ -40,3 +40,30 @@ cd to directory where you image file is located
   sudo dd bs=1m if=image.img of=/dev/rdisk<disk# from diskutil> conv=sync
   ```
 Right click and properly eject the sd card  
+
+## Hardware Setup
+**_I recommend viewing the autocad file in the autocad folder_**
+
+Solder all of the pins for the pi except for the following pins: 1 , 2 , 3 , 5 , 39.
+
+For the above pins, solder wire from the bottom through the holes.
+
+Plug in the touchscreen and proceed with the touchscreen setup.
+
+## Touchscreen Setup
+Plug in the touchscreen with the pin 2 lining up with pin 2 on the pi
+
+Start the pi and go through all of the setup
+
+Open the terminal and execut the following commands
+
+  ```
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo rm -rf LCD-show
+  git clone https://github.com/goodtft/LCD-show.git
+  chmod -R 755 LCD-show
+  cd LCD-show/
+  sudo ./MHS35-show
+  ```
+Then reboot
