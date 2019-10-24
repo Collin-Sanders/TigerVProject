@@ -1,5 +1,5 @@
 # TigerV2
-##***Touchscreen interface for controlling automotive accessories***
+## ***Touchscreen interface for controlling automotive accessories***
 
 
 #### Shopping List:
