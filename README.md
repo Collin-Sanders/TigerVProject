@@ -28,3 +28,24 @@ $9  - Connectors
   
 #### Estimated Total Cost:
 $112
+
+
+# Getting Started
+## Installing Raspbian (for mac)
+#### Download the latest version of raspbian from this link:
+- https://www.raspberrypi.org/downloads/raspbian/
+
+#### On your mac:
+Open up terminal and type the following commands
+  ```
+  diskutil list
+  ```
+Identify the disk (not the partition) of your SD card
+  ```
+  diskutil unmountDisk /dev/disk<disk# from diskutil>
+  ```
+cd to directory where you image file is located
+  ```
+  sudo dd bs=1m if=image.img of=/dev/rdisk<disk# from diskutil> conv=sync
+  ```
+Right click and properly eject the sd card  
