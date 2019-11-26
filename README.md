@@ -12,8 +12,6 @@ $27 - [Touchscreen](https://www.amazon.com/dp/B07NSCWY8Z/?coliid=II4254KWVJXQK&c
 
 $11 - [Relays](https://www.amazon.com/dp/B07DN8DTRW/?coliid=I21PV3BNJNWEHF&colid=3PB41YGHIDZTW&psc=1&ref_=lv_ov_lig_dp_it)
 
-$16 - [Container](https://www.amazon.com/dp/B005T5A0W4/?coliid=ITRCCVAQB8PF&colid=3PB41YGHIDZTW&psc=1&ref_=lv_ov_lig_dp_it)
-
 $9  - [Connectors](https://www.amazon.com/dp/B01LCV8DXQ/?coliid=I239Y8T2FCJZ2O&colid=3PB41YGHIDZTW&ref_=lv_ov_lig_dp_it&th=1)
 
 $11 - [Enclosure](https://www.elexp.com/061135instrument-cases-10-x7-5-x3-1.html)
