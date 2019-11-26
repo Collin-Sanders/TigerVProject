@@ -16,6 +16,8 @@ $16 - [Container](https://www.amazon.com/dp/B005T5A0W4/?coliid=ITRCCVAQB8PF&coli
 
 $9  - [Connectors](https://www.amazon.com/dp/B01LCV8DXQ/?coliid=I239Y8T2FCJZ2O&colid=3PB41YGHIDZTW&ref_=lv_ov_lig_dp_it&th=1)
 
+$11 - [Enclosure](https://www.elexp.com/061135instrument-cases-10-x7-5-x3-1.html)
+
   #### [Link to Amazon list](https://www.amazon.com/hz/wishlist/ls/3PB41YGHIDZTW?ref_=wl_share)
   
 #### Estimated Total Cost:
