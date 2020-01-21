@@ -1,4 +1,4 @@
-# TigerV2 - A touchscreen interface for controlling automotive accessories
+# TigerV - A touchscreen interface for controlling automotive accessories
 
 
 ## Shopping List:
