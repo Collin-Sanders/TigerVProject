@@ -69,12 +69,12 @@ Open the terminal and execute the following commands
 Then reboot
 
 
-## Install the TigerV2 software
+## Install the TigerV software
 
 Open the terminal and execute the following commands
 
   ```
-  git clone https://github.com/Collin-Sanders/TigerV2Project.git
+  git clone https://github.com/Collin-Sanders/TigerVProject.git
   ```
   
 ## Set the program to run on start
