@@ -2,12 +2,43 @@ from guizero import App, PushButton, Box
 from Properties import button_height, button_width, screen_width, \
 screen_height, default_bg_color, image_names_off, image_names_on, \
 page_button_width, page_button_height, on_text_color, off_text_color, \
-strobe_text_color, back_text_color, page_text_size, strobe_images
+strobe_text_color, back_text_color, page_text_size, strobe_images, \
+mqtt_server_id, mqtt_port, mqtt_keepalive
+import paho.mqtt.client as mqtt
 
 
 
 
-main_button_list = []
+
+###############################################################################
+###############################################################################
+############################## MQTT Functions #################################
+###############################################################################
+###############################################################################
+
+def on_connect(client, obj, flags, rc):
+    #print("rc: " + str(rc))
+    pass
+
+def on_publish(client, obj, mid):
+    pass
+
+
+
+
+
+
+###############################################################################
+###############################################################################
+############################## MQTT Connection ################################
+###############################################################################
+###############################################################################
+
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_publish = on_publish
+client.connect(mqtt_server_id, mqtt_port, mqtt_keepalive)
+client.loop_start()
 
 
 
@@ -26,7 +57,7 @@ app = \
         width=str(screen_width), 
         layout="grid")
     
-app.bg = "black"    
+app.bg = default_bg_color 
 
 
 
@@ -42,6 +73,7 @@ app.bg = "black"
 ############################## Button Boxes ###################################
 ###############################################################################
 ###############################################################################    
+
 buttons_box_main = \
     Box(
         app, 
@@ -110,6 +142,7 @@ buttons_box_6p1 = \
 ############################# Main Page #######################################
 ###############################################################################
 ###############################################################################    
+
 button1 = \
     PushButton(
         buttons_box_main, 
@@ -617,6 +650,7 @@ button6p1b6.text_size = page_text_size
 ############################### Helper Functions ##############################
 ###############################################################################
 ###############################################################################
+
 def main_button_clicked(event_data):
     
     if(event_data.widget.text == "1"):
@@ -705,6 +739,16 @@ def sub_6_button_clicked(event_data):
     elif(event_data.widget.text == "BACK"):
         buttons_box_6p1.hide()
         buttons_box_main.show()        
+
+
+
+
+
+
+
+
+
+
 
 def toggle(button_number, text):
     
@@ -838,6 +882,11 @@ button6p1b6.when_clicked = sub_6_button_clicked
 
 
 
+###############################################################################
+###############################################################################
+############################### Show the Application ##########################
+###############################################################################
+###############################################################################
 
 app.set_full_screen()
 app.display()
