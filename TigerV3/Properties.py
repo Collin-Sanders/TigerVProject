@@ -56,5 +56,5 @@ back_text_color = 'white'
 ###############################################################################
 
 mqtt_server_id = "192.168.4.1"
-mqtt_port = "1883"
-mqtt_keepalive = "60"
+mqtt_port = 1883
+mqtt_keepalive = 60

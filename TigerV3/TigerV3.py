@@ -5,40 +5,12 @@ page_button_width, page_button_height, on_text_color, off_text_color, \
 strobe_text_color, back_text_color, page_text_size, strobe_images, \
 mqtt_server_id, mqtt_port, mqtt_keepalive
 import paho.mqtt.client as mqtt
+import paho.mqtt.publish as mqtt_publish
+import paho.mqtt.subscribe as mqtt_subscribe
+import time
 
 
 
-
-
-###############################################################################
-###############################################################################
-############################## MQTT Functions #################################
-###############################################################################
-###############################################################################
-
-def on_connect(client, obj, flags, rc):
-    #print("rc: " + str(rc))
-    pass
-
-def on_publish(client, obj, mid):
-    pass
-
-
-
-
-
-
-###############################################################################
-###############################################################################
-############################## MQTT Connection ################################
-###############################################################################
-###############################################################################
-
-client = mqtt.Client()
-client.on_connect = on_connect
-client.on_publish = on_publish
-client.connect(mqtt_server_id, mqtt_port, mqtt_keepalive)
-client.loop_start()
 
 
 
@@ -676,66 +648,66 @@ def main_button_clicked(event_data):
 
 def sub_1_button_clicked(event_data):
     if(event_data.widget.text == "ON"):
-        toggle(1, "ON")
+        toggle("1", "ON", "Send")
     elif(event_data.widget.text == "OFF"):
-        toggle(1, "OFF")
+        toggle("1", "OFF", "Send")
     elif(event_data.widget.text == "STROBE"):
-        toggle(1, "STROBE")    
+        toggle("1", "STROBE", "Send")    
     elif(event_data.widget.text == "BACK"):
         buttons_box_1p1.hide()
         buttons_box_main.show()
         
 def sub_2_button_clicked(event_data):
     if(event_data.widget.text == "ON"):
-        toggle(2, "ON")
+        toggle("2", "ON", "Send")
     elif(event_data.widget.text == "OFF"):
-        toggle(2, "OFF")
+        toggle("2", "OFF", "Send")
     elif(event_data.widget.text == "STROBE"):
-        toggle(2, "STROBE")    
+        toggle("2", "STROBE", "Send")    
     elif(event_data.widget.text == "BACK"):
         buttons_box_2p1.hide()
         buttons_box_main.show()        
         
 def sub_3_button_clicked(event_data):
     if(event_data.widget.text == "ON"):
-        toggle(3, "ON")
+        toggle("3", "ON", "Send")
     elif(event_data.widget.text == "OFF"):
-        toggle(3, "OFF")
+        toggle("3", "OFF", "Send")
     elif(event_data.widget.text == "STROBE"):
-        toggle(3, "STROBE")    
+        toggle("3", "STROBE", "Send")    
     elif(event_data.widget.text == "BACK"):
         buttons_box_3p1.hide()
         buttons_box_main.show()
 
 def sub_4_button_clicked(event_data):
     if(event_data.widget.text == "ON"):
-        toggle(4, "ON")
+        toggle("4", "ON", "Send")
     elif(event_data.widget.text == "OFF"):
-        toggle(4, "OFF")
+        toggle("4", "OFF", "Send")
     elif(event_data.widget.text == "STROBE"):
-        toggle(4, "STROBE")    
+        toggle("4", "STROBE", "Send")    
     elif(event_data.widget.text == "BACK"):
         buttons_box_4p1.hide()
         buttons_box_main.show()
         
 def sub_5_button_clicked(event_data):
     if(event_data.widget.text == "ON"):
-        toggle(5, "ON")
+        toggle("5", "ON", "Send")
     elif(event_data.widget.text == "OFF"):
-        toggle(5, "OFF")
+        toggle("5", "OFF", "Send")
     elif(event_data.widget.text == "STROBE"):
-        toggle(5, "STROBE")    
+        toggle("5", "STROBE", "Send")    
     elif(event_data.widget.text == "BACK"):
         buttons_box_5p1.hide()
         buttons_box_main.show()
         
 def sub_6_button_clicked(event_data):
     if(event_data.widget.text == "ON"):
-        toggle(6, "ON")
+        toggle("6", "ON", "Send")
     elif(event_data.widget.text == "OFF"):
-        toggle(6, "OFF")
+        toggle("6", "OFF", "Send")
     elif(event_data.widget.text == "STROBE"):
-        toggle(6, "STROBE")    
+        toggle("6", "STROBE", "Send")    
     elif(event_data.widget.text == "BACK"):
         buttons_box_6p1.hide()
         buttons_box_main.show()        
@@ -750,68 +722,61 @@ def sub_6_button_clicked(event_data):
 
 
 
-def toggle(button_number, text):
-    
-    if(button_number == 1):
+def toggle(button_number, text, SoR):
+   
+    if(button_number == "1"):
         if(text == "STROBE"): 
             button1.image = strobe_images[0]
-            return
         elif(text == "ON"):
             button1.image = image_names_on[0]
         elif(text == "OFF"):
             button1.image = image_names_off[0]
             
-    elif(button_number == 2):
+    elif(button_number == "2"):
         if(text == "STROBE"): 
             button2.image = strobe_images[1]
-            return
         elif(text == "ON"):
             button2.image = image_names_on[1]
         elif(text == "OFF"):
             button2.image = image_names_off[1]
             
-    elif(button_number == 3):
+    elif(button_number == "3"):
         if(text == "STROBE"): 
-            button3.image = strobe_images[2]
-            return        
+            button3.image = strobe_images[2]  
         elif(text == "ON"):
             button3.image = image_names_on[2]
         elif(text == "OFF"):
             button3.image = image_names_off[2]
             
-    elif(button_number == 4):
+    elif(button_number == "4"):
         if(text == "STROBE"): 
-            button4.image = strobe_images[3]
-            return        
+            button4.image = strobe_images[3]     
         elif(text == "ON"):
             button4.image = image_names_on[3]
         elif(text == "OFF"):
             button4.image = image_names_off[3]
             
-    elif(button_number == 5):
+    elif(button_number == "5"):
         if(text == "STROBE"): 
-            button5.image = strobe_images[4]
-            return        
+            button5.image = strobe_images[4] 
         elif(text == "ON"):
             button5.image = image_names_on[4]
         elif(text == "OFF"):
             button5.image = image_names_off[4]
             
-    elif(button_number == 6):    
+    elif(button_number == "6"):    
         if(text == "STROBE"): 
-            button6.image = strobe_images[5]
-            return        
+            button6.image = strobe_images[5] 
         elif(text == "ON"):
             button6.image = image_names_on[5]
         elif(text == "OFF"):
             button6.image = image_names_off[5]
+
+    app.tk.update()
     
-            
-    
-
-
-
-
+    if(SoR == "Send"):
+        #publish to mqtt
+        mqtt_publish.single(button_number, text, hostname=mqtt_server_id)
 
 ###############################################################################
 ###############################################################################
@@ -882,6 +847,7 @@ button6p1b6.when_clicked = sub_6_button_clicked
 
 
 
+
 ###############################################################################
 ###############################################################################
 ############################### Show the Application ##########################
@@ -889,4 +855,21 @@ button6p1b6.when_clicked = sub_6_button_clicked
 ###############################################################################
 
 app.set_full_screen()
-app.display()
+app.tk.update()
+
+
+###############################################################################
+###############################################################################
+############################## MQTT Subscribe ##########################
+###############################################################################
+###############################################################################
+
+
+def on_message(client, userdata, message):
+    topic = str(message.topic)
+    payload_string = str(message.payload)
+    payload = str(payload_string[2:len(payload_string)-1])
+    print(payload)
+    toggle(topic, payload, "Receive")
+mqtt_subscribe.callback(on_message, ["1", "2", "3", "4", "5", "6"], hostname=mqtt_server_id)    
+
