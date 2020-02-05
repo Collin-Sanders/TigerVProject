@@ -167,6 +167,15 @@ $112
   ```
   git clone https://github.com/Collin-Sanders/TigerVProject.git
   ```
+- Disable bluetooth (just for lowering power consumption)
+   ```
+   sudo nano /boot/config.txt
+   ```
+   
+   Add the following to the end of the file
+   ```
+   dtoverlay=pi3-disable-bt
+	 ```
 
 - Plug in the touchscreen to the 3B+ and put it in its case
 
