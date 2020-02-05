@@ -152,16 +152,24 @@ $112
   On another wireless device check that there is a wifi network with the SSID as you listed above and check that you
   can connect to the access point using the password you specified above.
 
-## Touchscreen Setup
-Plug in the touchscreen with the pin 2 lining up with pin 2 on the pi
-
-Start the pi and go through all of the setup
-
-Open the terminal and execute the following commands
+## Raspberry Pi 3B+ client setup
+- Install the SD card into the Pi 3B+ and power it on
+- Complete the initial setup and connect the Pi 3B+ to a wifi network
+- Update your Pi 3B+ by opening the terminal and entering the following commands:
 
   ```
   sudo apt-get update
   sudo apt-get upgrade
+  ```
+- Install the TigerV software
+  Open the command prompt and execute the following command
+
+  ```
+  git clone https://github.com/Collin-Sanders/TigerVProject.git
+  ```
+  
+- Install the touchscreen software  
+  ```
   sudo rm -rf LCD-show
   git clone https://github.com/goodtft/LCD-show.git
   chmod -R 755 LCD-show
@@ -169,14 +177,41 @@ Open the terminal and execute the following commands
   sudo ./MHS35-show
   ```
 Then reboot
-
-
-## Install the TigerV software
-
-Open the terminal and execute the following commands
-
   ```
-  git clone https://github.com/Collin-Sanders/TigerVProject.git
+  sudo reboot
   ```
   
-## Set the program to run on start
+- Configure TigerV to autorun
+
+  Create an autostart file
+  ```
+  mkdir /home/pi/.config/autostart
+  nano /home/pi/.config/autostart/TigerV.dekstop
+  ```
+  Edit the file to look like below:
+  ```
+  [Desktop Entry]
+  Type=Application
+  Name=TigerV
+  Exec=/usr/bin/python3 /home/pi/TigerV3/TigerV3.py
+  ```
+
+- Disable the cursor on startup
+
+  Install unclutter to disable the cursor
+  ```
+  sudo apt-get install unclutter
+  ```
+  Edit LXDE Autostart Script
+  ```
+  sudo nano ~/.config/lxsession/LXDE-pi/autostart
+  ```
+  add this line to the autostart script:
+  ```
+  @unclutter -idle 0
+  ```
+
+- Reboot
+  ```
+  sudo reboot
+  ```
