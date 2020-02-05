@@ -167,7 +167,9 @@ $112
   ```
   git clone https://github.com/Collin-Sanders/TigerVProject.git
   ```
-  
+
+- Plug in the touchscreen to the 3B+ and put it in its case
+
 - Install the touchscreen software  
   ```
   sudo rm -rf LCD-show
@@ -176,7 +178,7 @@ $112
   cd LCD-show/
   sudo ./MHS35-show
   ```
-Then reboot
+  Then reboot
   ```
   sudo reboot
   ```
@@ -215,3 +217,38 @@ Then reboot
   ```
   sudo reboot
   ```
+  
+  
+## Mobile Phone client setup
+
+Any mqtt client app will work but for this example I will be using the android app "Mqtt Dashboard - IoT and Node-RED controller"
+
+- Install the app on your android phone
+- Connect your android phone to your servers wifi network
+- In the app, click the hamburger in the lower left corner
+- Click Manage brokers
+- Click the "+" icon at the bottom of the screen
+- Give the broker a name
+- Enter "192.168.4.1" for the broker address
+- Leave the rest and click the save icon at the bottom of the screen
+- Create tiles to your liking
+  
+  The topics and payloads should be as follows:
+  
+  button1 topic: "1"
+  
+  button2 topic: "2"
+  
+  button3 topic: "3"
+  
+  button4 topic: "4"
+  
+  etc.
+  
+  Strobe payload: "STROBE"
+  
+  On payload    : "ON"
+  
+  Off payload   : "OFF"
+  
+  
