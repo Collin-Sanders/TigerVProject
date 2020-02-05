@@ -1,4 +1,4 @@
-# TigerV - A touchscreen interface for controlling automotive accessories
+# TigerV - A wireless interface for controlling automotive accessories
 
 
 ## Shopping List:
