@@ -147,6 +147,9 @@ $112
   sudo systemctl enable hostapd
   sudo systemctl start hostapd   
    ```
+- Verify the server is working
+  On another wireless device check that there is a wifi network with the SSID as you listed above and check that you
+  can connect to the access point using the password you specified above.
 
 ## Touchscreen Setup
 Plug in the touchscreen with the pin 2 lining up with pin 2 on the pi
