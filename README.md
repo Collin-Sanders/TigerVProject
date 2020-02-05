@@ -2,9 +2,13 @@
 
 
 ## Shopping List:
-$27 - [Pi Zero](https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
+$27 - [Pi Zero W](https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
 
-$12  - [NodeMCU ESP8266](https://www.amazon.com/gp/product/B07HF44GBT/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1)
+$12 - [NodeMCU ESP8266](https://www.amazon.com/gp/product/B07HF44GBT/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1)
+
+$20 - [SD Cards](https://www.amazon.com/gp/product/B07CP9ZQ72/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+
+$58 - [Pi 3B+](https://www.amazon.com/CanaKit-Raspberry-Power-Supply-Listed/dp/B07BC6WH7V/ref=sr_1_3?keywords=raspberry+pi+3b%2B&qid=1580924958&sr=8-3)
 
 $17 - [Fuse Block](https://www.amazon.com/gp/product/B07W6KBJ8G/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
 
