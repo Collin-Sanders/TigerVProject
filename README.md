@@ -175,7 +175,8 @@ $112
    Add the following to the end of the file
    ```
    dtoverlay=pi3-disable-bt
-	 ```
+   ```
+
 
 - Plug in the touchscreen to the 3B+ and put it in its case
 
@@ -192,6 +193,7 @@ $112
   sudo reboot
   ```
   
+- Connect to your created wifi network
 - Configure TigerV to autorun
 
   Create an autostart file
