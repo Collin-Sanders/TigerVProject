@@ -107,9 +107,13 @@ $112
   To use the 5 GHz band, you can change the operations mode from hw_mode=g to hw_mode=a. Possible values for hw_mode are:
 
     a = IEEE 802.11a (5 GHz)
+    
     b = IEEE 802.11b (2.4 GHz)
+    
     g = IEEE 802.11g (2.4 GHz)
+    
     ad = IEEE 802.11ad (60 GHz) (Not available on the Raspberry Pi)
+    
 
   ```
   interface=wlan0
@@ -122,7 +126,7 @@ $112
   auth_algs=1
   ignore_broadcast_ssid=0
   wpa=2
-  wpa_passphrase=AardvarkBadgerHedgehog
+  wpa_passphrase=<Password>
   wpa_key_mgmt=WPA-PSK
   wpa_pairwise=TKIP
   rsn_pairwise=CCMP
