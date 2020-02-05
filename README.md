@@ -4,7 +4,7 @@
 ## Shopping List:
 $27 - [Pi Zero](https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
 
-$5  - [Port Expander](https://www.amazon.com/gp/product/B00I6OEWJM/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+$12  - [NodeMCU ESP8266](https://www.amazon.com/gp/product/B07HF44GBT/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1)
 
 $17 - [Fuse Block](https://www.amazon.com/gp/product/B07W6KBJ8G/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
 
@@ -23,23 +23,19 @@ $112
 
 
 # Getting Started
-## Installing Raspbian (for mac)
+## Installing Raspbian
 #### [Download the latest version of raspbian from this link](https://www.raspberrypi.org/downloads/raspbian/)
+#### [Download the latest version of BalenaEtcher from this link](https://www.balena.io/etcher/)
+#### On your PC:
+- Unzip your raspbian image file
+- Open Balena Etcher
+- Select you image file
+- Insert your microSD card
+- Select your microSD card
+- Click flash
+- Properly eject the sd card 
 
-#### On your mac:
-Open up terminal and type the following commands
-  ```
-  diskutil list
-  ```
-Identify the disk (not the partition) of your SD card
-  ```
-  diskutil unmountDisk /dev/disk<disk# from diskutil>
-  ```
-cd to directory where you image file is located
-  ```
-  sudo dd bs=1m if=image.img of=/dev/rdisk<disk# from diskutil> conv=sync
-  ```
-Right click and properly eject the sd card  
+*Repeat this step for two SD cards*
 
 ## Hardware Setup
 **_I recommend viewing the autocad file in the autocad folder_**
