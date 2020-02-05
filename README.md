@@ -37,14 +37,17 @@ $112
 
 *Repeat this step for two SD cards*
 
-## Hardware Setup
-**_I recommend viewing the autocad file in the autocad folder_**
+## Server Steup
+- Install the SD card into the Pi Zero W and power it on
+- Complete the initial setup and connect the Pi Zero W to a wifi network
+- Update your Pi zero W by opening the terminal and entering the following commands:
 
-Solder all of the pins for the pi except for the following pins: 1 , 2 , 3 , 5 , 39.
-
-For the above pins, solder wire from the bottom through the holes.
-
-Plug in the touchscreen and proceed with the touchscreen setup.
+  ```
+  sudo apt-get update
+  sudo apt-get upgrade
+  ```
+  
+  
 
 ## Touchscreen Setup
 Plug in the touchscreen with the pin 2 lining up with pin 2 on the pi
