@@ -167,6 +167,16 @@ $112
   ```
   git clone https://github.com/Collin-Sanders/TigerVProject.git
   ```
+- Install depencency
+  Navigate to the TigerV folder and install
+  
+  ```
+  cd /home/pi/TigerVProject/TigerV3/
+  git clone https://github.com/eclipse/paho.mqtt.python
+  cd paho.mqtt.python
+  sudo python3 setup.py install
+  ```
+  
 - Disable bluetooth (just for lowering power consumption)
    ```
    sudo nano /boot/config.txt
