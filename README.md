@@ -162,12 +162,14 @@ $112
   sudo apt-get upgrade
   ```
 - Install the TigerV software
+
   Open the command prompt and execute the following command
 
   ```
   git clone https://github.com/Collin-Sanders/TigerVProject.git
   ```
 - Install depencency
+
   Navigate to the TigerV folder and install
   
   ```
