@@ -34,6 +34,7 @@ $12 - [Heavy Duty Relay](https://www.amazon.com/gp/product/B07T35K8S2/ref=ppx_yo
 - Fuses
 - Perf Board w/ Headers
 - Crimp Connectors
+- Battery Terminals
 
 
 
