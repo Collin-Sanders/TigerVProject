@@ -40,7 +40,7 @@ $12 - [Heavy Duty Relay](https://www.amazon.com/gp/product/B07T35K8S2/ref=ppx_yo
   #### [Link to Amazon list](https://www.amazon.com/hz/wishlist/ls/3PB41YGHIDZTW?ref_=wl_share)
   
 #### Estimated Total Cost:
-$112
+$232
 
 
 # Getting Started
