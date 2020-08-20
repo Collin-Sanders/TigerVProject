@@ -214,6 +214,9 @@ $112
   @pcmanfm --desktop --profile LXDE-pi
   @xscreensaver -no-splash
   @unclutter -idle 0
+  @xset s noblank
+  @xset s off
+  @xset s -dpms
   @sudo python3 /home/pi/TigerV3.1/TigerV3.py
   ```
 
