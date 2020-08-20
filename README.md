@@ -208,34 +208,23 @@ $112
 - Connect to your created wifi network
 - Configure TigerV to autorun
 
-  Create an autostart file
+  Edit the autostart file
   ```
-  mkdir /home/pi/.config/autostart
-  nano /home/pi/.config/autostart/TigerV.dekstop
+  sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
   ```
   Edit the file to look like below:
   ```
-  [Desktop Entry]
-  Type=Application
-  Name=TigerV
-  Exec=/usr/bin/python3 /home/pi/TigerV3/TigerV3.py
+  @lxpanel --profile LXDE-pi
+  @pcmanfm --desktop --profile LXDE-pi
+  @xscreensaver -no-splash
+  @unclutter -idle 0
+  @sudo python3 /home/pi/TigerV3.1/TigerV3.py
   ```
 
 - Disable the cursor on startup
-
-  Install unclutter to disable the cursor
   ```
   sudo apt-get install unclutter
   ```
-  Edit LXDE Autostart Script
-  ```
-  sudo nano ~/.config/lxsession/LXDE-pi/autostart
-  ```
-  add this line to the autostart script:
-  ```
-  @unclutter -idle 0
-  ```
-
 - Reboot
   ```
   sudo reboot
