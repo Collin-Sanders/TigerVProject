@@ -199,12 +199,8 @@ $112
   chmod -R 755 LCD-show
   cd LCD-show/
   sudo ./MHS35-show
+  sudo ./rotate.sh 180
   ```
-  Then reboot
-  ```
-  sudo reboot
-  ```
-  
 - Connect to your created wifi network
 - Configure TigerV to autorun
 
