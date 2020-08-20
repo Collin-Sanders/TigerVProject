@@ -2,13 +2,13 @@
 
 
 ## Shopping List:
-$27 - [Pi Zero W](https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
+$29 - [Pi Zero W](https://www.amazon.com/gp/product/B0748MPQT4/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
 
-$12 - [NodeMCU ESP8266](https://www.amazon.com/gp/product/B07HF44GBT/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1)
+$13 - [NodeMCU ESP8266](https://www.amazon.com/gp/product/B07HF44GBT/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1)
 
-$20 - [SD Cards](https://www.amazon.com/gp/product/B07CP9ZQ72/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+$14 - [SD Cards](https://www.amazon.com/gp/product/B07CP9ZQ72/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 
-$58 - [Pi 3B+](https://www.amazon.com/CanaKit-Raspberry-Power-Supply-Listed/dp/B07BC6WH7V/ref=sr_1_3?keywords=raspberry+pi+3b%2B&qid=1580924958&sr=8-3)
+$52 - [Pi 3B+](https://www.amazon.com/CanaKit-Raspberry-Power-Supply-Listed/dp/B07BC6WH7V/ref=sr_1_3?keywords=raspberry+pi+3b%2B&qid=1580924958&sr=8-3)
 
 $17 - [Fuse Block](https://www.amazon.com/gp/product/B07W6KBJ8G/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
 
@@ -18,7 +18,24 @@ $11 - [Relays](https://www.amazon.com/dp/B07DN8DTRW/?coliid=I21PV3BNJNWEHF&colid
 
 $9  - [Connectors](https://www.amazon.com/dp/B01LCV8DXQ/?coliid=I239Y8T2FCJZ2O&colid=3PB41YGHIDZTW&ref_=lv_ov_lig_dp_it&th=1)
 
-$11 - [Enclosure](https://www.elexp.com/061135instrument-cases-10-x7-5-x3-1.html)
+$14 - [Enclosure](https://www.polycase.com/dc-96f)
+
+$13 - [DC to DC Converter](https://www.amazon.com/EPBOWPT-Converter-Regulator-Supply-Transformer/dp/B01M03288J/ref=sr_1_20?dchild=1&keywords=DC+-+DC+converter&qid=1597956478&sr=8-20)
+
+$21 - [Circuit Interruptor](https://www.amazon.com/Circuit-Breaker-Waterproof-Trolling-Resettable/dp/B08D39FKVW/ref=sr_1_13?dchild=1&keywords=120A+DC+Switch&qid=1597956591&sr=8-13)
+
+$12 - [Heavy Duty Relay](https://www.amazon.com/gp/product/B07T35K8S2/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
+
+## Misc Supplies
+- Soldering Iron
+- Various Gauges of Wire
+- Hot Glue Gun
+- Heat Shrink
+- Fuses
+- Perf Board w/ Headers
+- Crimp Connectors
+
+
 
   #### [Link to Amazon list](https://www.amazon.com/hz/wishlist/ls/3PB41YGHIDZTW?ref_=wl_share)
   
