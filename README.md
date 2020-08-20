@@ -173,7 +173,7 @@ $112
   Navigate to the TigerV folder and install
   
   ```
-  cd /home/pi/TigerVProject/TigerV3/
+  cd /home/pi/TigerVProject/TigerV3.1/
   git clone https://github.com/eclipse/paho.mqtt.python
   cd paho.mqtt.python
   sudo python3 setup.py install
@@ -188,7 +188,10 @@ $112
    ```
    dtoverlay=pi3-disable-bt
    ```
-
+- Move the needed files to the home directory
+  ```
+  sudo mv /home/pi/TigerVProject/TigerV3.1 /home/pi
+  ```
 
 - Plug in the touchscreen to the 3B+ and put it in its case
 
